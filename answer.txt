@@ -1,0 +1,81 @@
+## Junior Backend Developer Interview Test Answer
+
+Q01. Largest Dataset ကို memory နည်းနည်းနှင့် သုံးရန်
+
+
+Q02.
+
+
+Q03. ORM is a way for mapping object oriented system to relational databases.
+    It works with database objects and is used to make relationships with database tables. 
+    Each table of the database is mapped with a particular eloquent model. The model object contains 
+    various methods to retrieve and update data from the database table.
+    
+
+Q04. 
+
+
+Q05. $collection = collect([1, 2, 3, 4, 5, 6]);
+    
+    Collection less than 3
+    $items = $collection->partition(function ($i) {
+        return $i < 3;
+    });
+
+    Collection equal 3 or greater than 3
+    $items = $collection->partition(function ($i) {
+        return $i >= 3;
+    });
+
+Q06. include() is used when when the file is not required and application 
+    should continue when file is not found.
+    require() is used when the file is required by the application.
+
+
+Q07. 
+
+
+Q8. Model::get()->count() is used to count the record on some condition.
+    Model::count() is used to count all record from this model.
+
+
+Q09. By Using Eager, 
+    We can get everything we need at once
+    There’s no lag when accessing data during the course of usage by users
+    Fewer queries to hit the db with
+
+
+Q10. $models = Model::with(['firstTable', 'secondTable'])->get();
+
+
+Q11. A distributed denial-of-service (DDoS) is a kind of attack that try to disrupt the normal traffic 
+    of a target server or service in the surrounding.
+    DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources 
+    of attack traffic. Exploited machines can include computers and other networked resources such 
+    as IoT devices.
+    From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, 
+    preventing regular traffic from arriving at its destination.
+
+
+Q12. 500 server error is occured when the application is under maintenance by the Developer.
+
+
+Q13. PHP versions 8.1.3, 8.0.28, and 7.4.28 are released with security and bug fixes today.
+
+
+Q14. Soft Delete is kind of trait that support by laravel.
+    When we Delete a record using Soft Delete, that record is stored in a trash.
+    So, We can restore that data anytime we want from the trash. 
+
+
+Q15. We can undo last migrate by using artisan command "php artisan migrate:rollback".
+
+
+Q16.We can run cache clear
+    For laravel application -> php artisan cache:clear
+    For route -> php artisan route:clear
+    For Config -> php artisan config:clear
+    For Compile View -> php artisan view:clear
+
+    We can also used artisan command "php artisan optimize:clear" to clear application cache,
+    route cache, config cache, Compile view cache at the same time with one command.
